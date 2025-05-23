@@ -24,7 +24,8 @@ openai_client = OpenAI(
 #     }
 # ]
 
-def generate_from_llm(messages, model="deepseek/deepseek-chat-v3-0324:free"):
+
+def generate_from_llm(messages, model="mistralai/mixtral-8x7b-instruct"):
     try:
         response = openai_client.chat.completions.create(
             model=model,
